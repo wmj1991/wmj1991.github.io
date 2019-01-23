@@ -1,0 +1,10 @@
+{
+	"backgroundTextStyle": "light",
+	"backgroundColor": "#ccc",
+	"navigationBarBackgroundColor": "#fff",
+	"navigationBarTitleText": "购物车",
+	"navigationBarTextStyle": "black",
+	"usingComponents": {
+		"shopping": "../../components/lyl-car-model/car-model"
+	}
+}

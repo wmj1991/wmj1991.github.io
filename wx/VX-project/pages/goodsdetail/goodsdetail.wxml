@@ -1,0 +1,38 @@
+
+<view class='goods-box'>
+  <view class='goodsdetail'>
+    <image
+      class='good-img'
+      mode="widthFix"  
+      src="{{'http://www.ismei.net'+goods.ThumbnailUrl310}}" 
+      alt="" />
+    <view>{{goods.ProductName}}</view>
+    <view>
+      <text class='red'>￥{{goods.SalePrice}}</text>
+      <text class='linethrough'>￥{{goods.MarketPrice}}</text>
+    </view>
+    <view>已售:{{goods.SaleCounts}}</view>
+    <view>货号:{{goods.ProductCode}}</view>
+    <view class='ccc'>材料:{{goods.ShortDescription}}</view>
+  </view>
+  <view class='button'>
+    <button type="default" bindtap="goback">返回</button>
+    <button 
+      type="primary" 
+      data-goodsname="{{goods.ProductName}}"
+      data-goodsprice="{{goods.SalePrice}}"
+      data-goodsid="{{goods.ProductId}}" 
+      data-goodsimg="{{goods.ThumbnailUrl310}}" 
+      bindtap="addtocar"
+    >加入购物车</button>
+    <button
+      type="warn" 
+      data-goodsname="{{goods.ProductName}}"
+      data-goodsprice="{{goods.SalePrice}}"
+      data-goodsid="{{goods.ProductId}}" 
+      data-goodsimg="{{goods.ThumbnailUrl310}}" 
+      bindtap="gotocar"
+     >购买</button>
+  </view>
+</view>
+

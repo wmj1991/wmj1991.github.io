@@ -1,0 +1,79 @@
+<!--pages/my/my.wxml-->
+<view class='box'>
+  <view class='imgD'>
+    <image src='../../images/timg.jpg'></image>
+  </view>
+  <view class='dingdan'>
+    <view class='content'>
+      <image src='../../images/dingdan.png'></image>
+      <view class='one'>我的订单</view>
+    </view>
+
+    <view class='content'>
+      <image src='../../images/quanbu.png'></image>
+      <view class='all'>全部订单</view>
+    </view>
+    <hr/>
+
+  </view>
+  <view class='waitD'>
+    <view class='content'>
+      <image src='../../images/daifu.png'></image>
+      <view class='wait'>待付款</view>
+    </view>
+    <view class='content'>
+      <image src='../../images/peisong.png'></image>
+      <view class='wait'>今日配送</view>
+    </view>
+    <view class='content'>
+      <image src='../../images/pingjia.png'></image>
+      <view class='wait'>待评价</view>
+    </view>
+  </view>
+
+  <view class='youhuiD'>
+    <view class='content'>
+      <image src='../../images/youhui.png'></image>
+      <view class='hui'>优惠券</view>
+    </view>
+    <view class='content'>
+      <image src='../../images/jifen.png'></image>
+      <view class='hui'>会员积分</view>
+    </view>
+    <view class='content'>
+      <image src='../../images/shengri.png'></image>
+      <view class='hui'>生日提醒</view>
+    </view>
+  </view>
+
+
+  <view class='shouCang'>
+    <view class='content'>
+      <image src='../../images/shoucang.png'></image>
+      <view class='hui'>我的收藏</view>
+    </view>
+    <view class='content'>
+      <image src='../../images/shouhuo.png'></image>
+      <view class='hui'>收货地址</view>
+    </view>
+    <view class='content'>
+      <image src='../../images/yue.png'></image>
+      <view class='hui'>您的余额</view>
+    </view>
+  </view>
+
+  <view class='shouHouD'>
+    <view class='content'>
+      <image src='../../images/tongyong.png'></image>
+      <view class='shouHou'>联系客服</view>
+    </view>
+    <view class='content'>
+      <image src='../../images/bangzhu.png'></image>
+      <view class='shouHou'>帮助中心</view>
+    </view>
+    <view class='content'>
+      <image src='../../images/guanyu.png'></image>
+      <view class='shouHou'>关于花礼</view>
+    </view>
+  </view>
+</view>

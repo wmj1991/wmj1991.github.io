@@ -1,0 +1,26 @@
+<!--components/card/card.wxml-->
+<view class='box'>
+
+  <scroll-view 
+    class='card'
+    wx:for="{{list}}" 
+    wx:key="{{index}}"
+    scroll-y:true>
+    <navigator
+    class='card-nav'
+      url="{{'../goodsdetail/goodsdetail?datatype='+item.ProductId}}"
+      
+      hover-class="other-navigator-hover"
+    >
+      <image 
+        class='img' 
+        src="{{'http://www.ismei.net'+item.ThumbnailUrl310}}"
+        mode="widthFix" 
+        alt="" />
+      <view class='red'>￥{{item.SalePrice}}</view>
+      <view class='text'>{{item.ProductName}}</view>
+      <view class='ccc'>已售:{{item.SaleCounts}}</view>
+    </navigator>
+  </scroll-view>
+
+</view>

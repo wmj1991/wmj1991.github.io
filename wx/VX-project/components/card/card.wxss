@@ -1,0 +1,28 @@
+/* components/card/card.wxss */
+.box{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card{
+  width:48%;
+  font-size: 30rpx;
+  margin:0 1%;
+}
+.img{
+  width:100%;
+}
+.red{
+  color: red;
+}
+.text{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.ccc{
+  color:#999;
+}
+.card-nav{
+  width: 100%;
+}

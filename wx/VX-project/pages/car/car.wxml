@@ -1,0 +1,7 @@
+<!--pages/car/car.wxml-->
+<!-- <text>pages/car/car.wxml</text> -->
+
+<view>
+    <shopping goods="{{goods}}" timeStamp="{{timeStamp}}">
+    </shopping>
+</view>

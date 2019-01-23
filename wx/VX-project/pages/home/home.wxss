@@ -1,0 +1,51 @@
+.img, .swiper-item, .swiper {
+  width: 100%;
+  height: 300rpx;
+}
+
+.kaiye {
+  font-weight: 800;
+  text-align: center
+}
+
+.songLi {
+  font-size: 15px;
+   text-align: center
+}
+
+.shengRi {
+  font-weight: 800;
+   text-align: center
+}
+
+.liWu {
+  font-size: 15px;
+   text-align: center
+}
+
+.lvZhi {
+  font-weight: 800;
+   text-align: center
+}
+
+.qingXin {
+  font-size: 15px;
+   text-align: center
+}
+
+.yong {
+  font-weight: 800;
+   text-align: center
+}
+
+.chongMeng {
+  font-size: 15px;
+   text-align: center
+}
+
+
+
+
+
+
+

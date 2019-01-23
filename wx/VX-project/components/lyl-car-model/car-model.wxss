@@ -1,0 +1,137 @@
+/* components/shopping/shopping.wxss */
+
+.content {
+    margin-bottom: 120rpx;
+}
+
+.li {
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 2rpx solid rgba(0, 0, 0, 0.15);
+    padding: 20rpx;
+    height: 200rpx;
+    align-items: center;
+}
+
+.cover {
+    width: 150rpx;
+    height: 150rpx;
+    margin: 0 20rpx 0 40rpx;
+}
+
+image {
+    width: 100%;
+    height: 100%;
+}
+
+.cont {
+    width: 60%;
+    margin-left: 20rpx;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+}
+
+.cont .word {
+    /* margin-top: 24rpx; */
+    font-size: 24rpx;
+    line-height: 52rpx;
+    width: 80%;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cont .pricebox {
+    margin-top: 16rpx;
+    line-height: 60rpx;
+    height: 60rpx;
+    font-size: 24rpx;
+    display: flex;
+}
+
+.pricebox input {
+    border: 2rpx solid #000;
+    width: 50rpx;
+    text-align: center;
+    display: inline-block;
+}
+
+.pricebox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.numbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price {
+    color: rgb(212, 40, 40);
+    font-size: 30rpx;
+}
+
+.delbtn {
+    width: 40rpx;
+    border-radius: 50%;
+    font-size: 35rpx;
+    padding: 0;
+    text-align: center;
+    float: right;
+    line-height: 32rpx;
+    height: 40rpx;
+    border: 1px solid red !important;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    /* margin-bottom: 180rpx; */
+    bottom: 0;
+    z-index: 99;
+    background: #fff;
+    height: 120rpx;
+    border-top: 2rpx solid #f7f8f9;
+    line-height: 120rpx;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer button {
+	margin: 0 10rpx;
+}
+
+.add, .reduce {
+    width: 60rpx;
+    font-size: 30rpx;
+    color: #999;
+    margin: 0 10rpx;
+    text-align: center;
+    height: 50rpx;
+    padding: 0;
+    line-height: 45rpx;
+}
+
+.numbox > input {
+    border: 2rpx solid #999;
+    border-radius: 4rpx;
+    height: 40rpx;
+    padding: 0;
+    line-height: 40rpx;
+}
+
+.checkAll {
+    font-size: 30rpx;
+    margin: 20rpx;
+}

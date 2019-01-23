@@ -1,0 +1,35 @@
+<!--components/shopping/shopping.wxml-->
+<!-- <text>components/shopping/shopping.wxml</text> -->
+
+<view class="show">
+    <view class="content">
+        <view class="li" wx:for="{{mydata}}" wx:key="index">
+            <checkbox class='checkbox' color="green" data-key='{{index}}' checked="{{item.check}}" bindtap='checkOne'></checkbox>
+            <view class='cover'>
+                <image src="{{'http://www.ismei.net/'+item.goodsimg}}"></image>
+            </view>
+            <view class='cont'>
+                <view class='title'>
+                    <text class="word"> {{item.goodsname}}</text>
+                    <button type="warn" class='delbtn'  bindtap='del' data-delindex='{{index}}' >×</button>
+                </view>
+                <view class="pricebox">
+                    <text class='price'>￥{{item.goodsprice}}</text>
+                    <view class="numbox">
+                        <button type='default' plain="true" class="reduce" bindtap='reduce' data-reduceindex='{{index}}' disabled='{{item.disabled}}'>-</button>
+                        <input class='goodsNum' value="{{item.num}}" type="text" disabled='true'/>
+                        <button type='default' plain="true" class="add" bindtap='add' data-addindex='{{index}}'>+</button>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="footer">
+        <checkbox-group bindchange="checkAll" class="checkAll">
+            <checkbox id='checkall'  value="checkAll" checked='{{checkAll}}'></checkbox>
+            <label for="checkall">全选</label>
+        </checkbox-group>
+        <text class="price">总价:{{total}}</text>
+        <button type="warn" size='mini' bindtap='pay' plain='true'>进入结算</button>
+    </view>
+</view>

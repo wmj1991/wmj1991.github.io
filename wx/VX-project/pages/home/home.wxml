@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+    <swiper-item wx:for="{{imgUrls}}" wx:key="index" class="swiper-item">
+      <image class="img" src="{{item}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class='kaiye'>开业花篮</view>
+  <view class='songLi'>送礼首选，商务往来必备</view>
+  <view class="content">
+        <card datatype="kaiye" goodslist="{{goods}}"></card>
+  </view>
+
+<!-- 
+  <view class='shengRi'>生日鲜花</view>
+  <view class='liWu'>生日礼物，送给最爱的TA</view>
+
+
+
+  <view class='lvZhi'>绿植盆栽</view>
+  <view class='qingXin'>清新空气，给TA一个纯净的世界</view>
+
+
+
+  <view class='yong'>永生花</view>
+  <view class='chongMeng'>宠萌可爱，给她无时无刻的陪伴</view> -->
+</view>

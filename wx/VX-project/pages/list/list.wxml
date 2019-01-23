@@ -1,0 +1,114 @@
+<view class='list'>
+  <input class='searchinp' placeholder='搜索商品' type="text" auto-focus confirm-type='search' />
+  <view class='nav'>
+    <view class="{{index==navindex?'nav-item selected-nav-item' :'nav-item'}}" wx:for="{{datatypeList}}" data-index="{{index}}" wx:key="{{index}}" bindtap="changecolor">
+      {{item.text}}
+    </view>
+  </view>
+  <swiper
+    class='swiper'
+    bindchange='changeswiperindex'
+    current="{{swiperindex}}"
+  >
+    <swiper-item>
+      <view class='box'>
+        <scroll-view 
+          class='card'
+          wx:for="{{kaiyelist}}" 
+          wx:key="{{index}}"
+          scroll-y:true>
+          <navigator
+          class='card-nav'
+            url="{{'../goodsdetail/goodsdetail?datatype='+item.ProductId}}"
+            
+            hover-class="other-navigator-hover"
+          >
+            <image 
+              class='img' 
+              src="{{'http://www.ismei.net'+item.ThumbnailUrl310}}"
+              mode="widthFix" 
+              alt="" />
+            <view class='red'>￥{{item.SalePrice}}</view>
+            <view class='text'>{{item.ProductName}}</view>
+            <view class='ccc'>已售:{{item.SaleCounts}}</view>
+          </navigator>
+        </scroll-view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='box'>
+        <scroll-view 
+          class='card'
+          wx:for="{{shengrilist}}" 
+          wx:key="{{index}}"
+          scroll-y:true>
+          <navigator
+          class='card-nav'
+            url="{{'../goodsdetail/goodsdetail?datatype='+item.ProductId}}"
+            
+            hover-class="other-navigator-hover"
+          >
+            <image 
+              class='img' 
+              src="{{'http://www.ismei.net'+item.ThumbnailUrl310}}"
+              mode="widthFix" 
+              alt="" />
+            <view class='red'>￥{{item.SalePrice}}</view>
+            <view class='text'>{{item.ProductName}}</view>
+            <view class='ccc'>已售:{{item.SaleCounts}}</view>
+          </navigator>
+        </scroll-view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='box'>
+        <scroll-view 
+          class='card'
+          wx:for="{{lvzhilist}}" 
+          wx:key="{{index}}"
+          scroll-y:true>
+          <navigator
+          class='card-nav'
+            url="{{'../goodsdetail/goodsdetail?datatype='+item.ProductId}}"
+            
+            hover-class="other-navigator-hover"
+          >
+            <image 
+              class='img' 
+              src="{{'http://www.ismei.net'+item.ThumbnailUrl310}}"
+              mode="widthFix" 
+              alt="" />
+            <view class='red'>￥{{item.SalePrice}}</view>
+            <view class='text'>{{item.ProductName}}</view>
+            <view class='ccc'>已售:{{item.SaleCounts}}</view>
+          </navigator>
+        </scroll-view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='box'>
+        <scroll-view 
+          class='card'
+          wx:for="{{yongshenglist}}" 
+          wx:key="{{index}}"
+          scroll-y:true>
+          <navigator
+          class='card-nav'
+            url="{{'../goodsdetail/goodsdetail?datatype='+item.ProductId}}"
+            
+            hover-class="other-navigator-hover"
+          >
+            <image 
+              class='img' 
+              src="{{'http://www.ismei.net'+item.ThumbnailUrl310}}"
+              mode="widthFix" 
+              alt="" />
+            <view class='red'>￥{{item.SalePrice}}</view>
+            <view class='text'>{{item.ProductName}}</view>
+            <view class='ccc'>已售:{{item.SaleCounts}}</view>
+          </navigator>
+        </scroll-view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

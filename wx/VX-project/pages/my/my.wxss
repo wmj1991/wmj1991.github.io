@@ -1,0 +1,95 @@
+/* pages/my/my.wxss */
+
+.box {
+  margin-top: 100rpx;
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  font-size: 35rpx;
+}
+
+.imgD{
+text-align: center
+}
+
+.img {
+  border-bottom: 1rpx dashed #C0C0C0;
+}
+
+image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+
+.dingdan {
+  margin-top: 60rpx;
+  border-bottom: 1rpx dashed #C0C0C0;
+  display: flex;
+}
+
+.one, .all {
+  display: inline-block;
+  flex: 1;
+}
+
+.waitD {
+  margin-top: 60rpx;
+  border-bottom: 1rpx dashed #c0c0c0;
+  display: flex;
+}
+
+.wait {
+  display: inline-block;
+  flex: 1;
+}
+
+.youhuiD {
+  margin-top: 60rpx;
+  display: flex;
+}
+
+.hui {
+  display: inline-block;
+  flex: 1;
+}
+
+.shouCang {
+  margin-top: 60rpx;
+  display: flex;
+  border-bottom: 1rpx dashed #c0c0c0;
+}
+
+.shouHouD {
+  margin-top: 60rpx;
+  border-bottom: 1rpx dashed #c0c0c0;
+  display: flex;
+}
+
+.shouHou {
+  display: inline-block;
+  flex: 1;
+}
+
+.content:nth-child(1){
+  width: 150rpx;
+  text-align: center;
+  margin-left: 2%
+}
+.content:nth-child(2){
+  width: 150rpx;
+  text-align: center;
+  margin-left: 13%
+}
+.content:nth-child(3){
+  width: 150rpx;
+  text-align: center;
+  margin-left: 13%
+}
+
+
+
+.hr{
+  margin-top: 5rpx;
+  border: 1rpx solid red
+}
